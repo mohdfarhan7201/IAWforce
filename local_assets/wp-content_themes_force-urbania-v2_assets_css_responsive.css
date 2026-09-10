@@ -1,0 +1,73 @@
+@media(max-width:767px) {
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-contact-us .section-title {
+        font-size: 20px;
+        margin-top: -3rem;
+    }
+
+    .presentiang_brouchure_box .card {
+        border: 0;
+    }
+
+    /* .from-title{
+        margin-top: -4rem;
+    } */
+    
+    .presentiang_brouchure_box {
+        position: relative;
+        bottom: -45px;
+        left: 0;
+        line-height: 1.2;
+        letter-spacing: 3.5px;
+        background: none;
+        border: none;
+        /* bottom: 0; */
+        max-width: 100%;
+    }
+
+    .presentiang_brouchure_box .card {
+        max-width: 100%;
+        background-color: rgba(0,0,0,1);
+        border-radius: 0;
+    }
+
+    .presentiang_brouchure_box .card-body {
+        padding: 14px;
+    }
+
+    .presentiang_brouchure_box .card-body h2 {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .leftrightText h3 {
+        font-size: 16px;
+        float: left;
+    margin-top: 12px;
+    }
+
+    .leftrightText p {
+        font-size: 14px;
+    }
+
+    .leftrightText {
+        padding: 16px 0;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .downloadbrochureBtn {
+        padding: 8px;
+        letter-spacing: 1.1px;
+        font-size: 11px;
+    }
+    .downloadbrochureBtn {
+    padding: 6px;
+    letter-spacing: 1.1px;
+    font-size: 11px;
+}
+}

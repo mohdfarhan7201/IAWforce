@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "AcherusGrotesque-Regular";
+    src: url("../fonts/AcherusGrotesque-Regular.woff") format("woff2"), url("../fonts/AcherusGrotesque-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "AcherusGrotesque-Medium";
+    src: url("../fonts/AcherusGrotesque-Medium.woff") format("woff2"), url("../fonts/AcherusGrotesque-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "AcherusGrotesque-Bold";
+    src: url("../fonts/AcherusGrotesque-Bold.woff") format("woff2"), url("../fonts/AcherusGrotesque-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "AcherusGrotesque-ExtraBold";
+    src: url("../fonts/AcherusGrotesque-ExtraBold.woff") format("woff2"), url("../fonts/AcherusGrotesque-ExtraBold.woff") format("woff");
+}
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular.woff") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff");
+}
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold.woff") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff");
+}
