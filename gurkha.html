@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<script src="local_assets/ajax_libs_jquery_3.7.1_jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="facebook-domain-verification" content="k2cgky5af4yezd48cdf3ecbcr906ou" />
@@ -366,6 +367,244 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
   pointer-events: none !important; 
 }
 </style>
+
+    <!-- Fonts & Elementor Styles for IAW Header & Footer -->
+    <link rel='stylesheet' id='elementor-gf-ubuntu-css' href='https://fonts.googleapis.com/css?family=Ubuntu:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='hello-elementor-css' href='local_assets/wp-content_litespeed_css_5543bf110575f9a723ba952f4f76cc84.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='hello-elementor-theme-style-css' href='local_assets/wp-content_litespeed_css_91c800bf77dbecf1a8a3c59010eed170.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='hello-elementor-header-footer-css' href='local_assets/wp-content_litespeed_css_9ea77aa885ceb4d7c134849e87cd3cf5.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='elementor-frontend-css' href='local_assets/wp-content_litespeed_css_6e0bdcec526d2f54ccf68cdb1766701e.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='elementor-post-8-css' href='local_assets/wp-content_litespeed_css_d857fafa22d58bb9f42f2820159d5f61.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='hello-elementor-child-style-css' href='local_assets/wp-content_litespeed_css_d8eead15cfa972a38197b1d7cbde877b.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='4089-css' href='local_assets/wp-content_litespeed_css_89fbd0d52d7c27994b59fa1e873aacfa.css' media='all' />
+    <link data-optimized="1" rel='stylesheet' id='371-css' href='local_assets/wp-content_litespeed_css_f3591541ed9af553c090d9be3a001d10.css' media='all' />
+    
+    <!-- Mega Menu Styles from index.html -->
+    <style type="text/css">.active{
+            display: block;
+        }
+        .hidediv {
+            display: none;
+        }
+        .mega-menu-wrap.hidemenu {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -9;
+        }
+        .mega-menu-wrap {
+            transition: all 0.1s;
+            position: fixed;
+            top: 75px;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+            z-index: 9;
+            margin: 0 40px;
+        }
+        .mega-menu-wrap .ast-container {
+      background: #EBEEF3;
+      padding: 20px 20px 0;
+    }
+        .mega-menu-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 385px;
+        }
+        .mega-menu-tabs {
+            width: 20%;
+        }
+        .mega-menu-links {
+      width: 76%;
+      height: 550px;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+        .mega-menu-tabs ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    .categorywrap {
+      background: #FFFFFF;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .categorywrap h3 {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0;
+    }
+        .mega-menu-tabs ul li a {
+      font-size: 16px;
+      line-height: 34px;
+      background: #ffffff;
+      display: block;
+      transition: all 0.5s;
+      position: relative;
+      border-bottom: 1px solid #E2E5EB;
+    }
+        .activecattab {
+            color: #0074C3 !important;
+        }
+        .mega-menu-tabs ul li a:after {
+            position: absolute;
+            content: '';
+            right: 0px;
+            top: 12px;
+            background: #ffffff url(local_assets/wp-content_uploads_2025_02_menu-arrow-black.svg) no-repeat center right;
+            width: 5px;
+            height: 10px;
+            opacity: 1;
+            transition: all 0.5s;
+        }
+        .mega-menu-tabs ul li a.activecattab:after {
+            background: #ffffff url(local_assets/wp-content_uploads_2025_02_menu-arrow-blue.svg) no-repeat center right;
+        }
+        ul.menu-firstlevel-post {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul.menu-secondlevel-post {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul.menu-firstlevel-post li a {
+            position: relative;
+            display: block;
+        }
+        ul.menu-firstlevel-post li a:hover {
+            color: #0074C3 !important;
+        }
+        ul.menu-secondlevel-post a {
+            color: #697281 !important;
+            font-weight: 400 !important;
+            font-size: 13px !important;
+            line-height: 18px;
+            position: relative;
+            transition: all 0.5s;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        ul.menu-secondlevel-post a:hover {
+            color: #0074C3 !important;
+        }
+        ul.menu-secondlevel-post a span {
+            color: #000000;
+            display: block;
+            max-width: 100%;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+        ul.menu-firstlevel-post > li {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .mega-menu-links h3 {
+            margin-bottom: 20px;
+        }
+        .menu-secondlevel-post li {
+            width: 15%;
+            margin-bottom: 20px;
+            padding: 0 13px;
+        }
+        .catlink-disable {
+            position: relative !important;
+            margin-bottom: 20px;
+            font-weight: 500 !important;
+            color: #0074C3;
+            font-size: 18px;
+        }
+        .catlink-disable span {
+            background: #EBEEF3;
+            padding-right: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 9;
+        }
+        .catlink-disable:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: #70707030;
+            top: 15px;
+        }
+        .scroll-down header#site-header .mega-menu-wrap {
+            top:0px;
+        }
+    .menu-cusrom-txt {
+      font-size: 12px;
+      line-height: 21px;
+      margin-bottom: 0;
+      color: #555;
+    }
+    .green-bg {
+      background-color: #46b07f;
+      color: #fff !important;
+      padding: 1px 2px;
+      border-radius: 3px;
+      display: inline-block !important;
+    }
+    .customugtext .forcethembtn {
+      display: inline-block !important;
+      margin-left: 7px;
+    }
+    .customugtext {
+      display: flex;
+      gap: 20px;
+    }
+    .gutext span {
+      display: block;
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+    .gutext a span {
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+    .guimg {
+      max-width: 175px;
+    }</style>
+
+    <style>
+      /* Reset generic tag interference on site-header and site-footer */
+      #site-header {
+        white-space: normal !important;
+        padding: 0 !important;
+        color: inherit !important;
+        font-family: 'Ubuntu', sans-serif !important;
+      }
+      #site-header .header-inner {
+        padding: 8px 20px !important;
+      }
+      #site-header .mega-menu-wrap {
+        top: 0px !important;
+      }
+      #site-footer {
+        white-space: normal !important;
+        font-family: 'Ubuntu', sans-serif !important;
+      }
+      .menu-secondlevel-post img, .mob-menu-models img, .prod-card img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+
 </head>
 
 <body class="5">
@@ -423,240 +662,893 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
     <!-- Loader -->
 
     <!--Header-->
-    <header class="header">
-        <!-- Desktop -->
-        <div class="d-none d-lg-none d-xl-block">
-            <!-- <div class="top">
-			<div class="container-fluid">
-				<ul class="d-flex justify-content-end">
-					<li>
-						<a href="#">
-							<i>
-								<img
-									class="img-fluid"
-									src="./assets/images/telephone.png"
-									alt=""
-								/>
-							</i>
-							Toll Free Helpline
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i>
-								<img
-									class="img-fluid"
-									src="./assets/images/brochure.png"
-									alt=""
-								/>
-							</i>
-							E-Brochure
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i>
-								<img
-									class="img-fluid"
-									src="./assets/images/test-drive.png"
-									alt=""
-								/>
-							</i>
-							Book a TD
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div> -->
-            <nav class="navbar navbar-expand-lg navbar-light midnight-green">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="local_assets/iaw-logo-white.svg" alt="IAW" style="height: 44px; margin-right: 25px;" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                                <ul class="navbar-nav ms-auto">
-                                                        <li class="nav-item">
-                                <a class="nav-link home-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                                                        <li class="nav-item">
-                                <a class="nav-link specs-link" aria-current="page" href="https://forcegurkha.co.in/explore/">Explore</a>
-                            </li>
-                                                        <li class="nav-item">
-                                <a class="nav-link service-link" aria-current="page" href="https://forcegurkha.co.in/service/">Service</a>
-                            </li>
-                                                        <li class="nav-item">
-                                <a class="nav-link gallery-link" aria-current="page" href="https://forcegurkha.co.in/gallery/">Gallery</a>
-                            </li>
-                                                        <li class="nav-item">
-                                <a class="nav-link gurkha-world" aria-current="page" href="https://forcegurkha.co.in/gurkha-world/">Gurkha World</a>
-                            </li>
-                                                        <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="media-events.html">News & Events</a>
-                            </li>
-                                                        <!--
-						<li class="nav-item">
-							<a class="nav-link specs-link" href="https://forcegurkha.co.in/specifications/">Specifications</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link gallery-link" href="https://forcegurkha.co.in/gallery/">Gallery</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link news-link" href="https://forcegurkha.co.in/news-and-events/">News & Events</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link service-link" href="https://forcegurkha.co.in/service/">Service</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link -gurkhaworld-link" href="#">Gurkha World</a>
-						</li>
--->
-                            <!-- <li class="nav-item">
-                                <a class="nav-link searchHeader" href="javascript:void(0);">
-                                    <i>
-                                        <img class="img-fluid" src="local_assets/wp-content_themes_force-motors_assets_images_search.png" alt="Search Icon" />
-                                    </i>
-                                    <span style="display: inline-block; min-width: 65px;">Search</span>
-                                </a>
-                            </li>-->
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://forcemotors.vardimakers.com/">
-                                    <span>Merchandise & <br/> Scale Models</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://forcegurkha.co.in/book-a-test-drive/">
-                                    <span>Schedule a <br />Test Drive</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="locate-dealer.html">
-                                    <span>Dealer <br />Locator</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="d-flex right-logo">
-                            <img src="local_assets/wp-content_themes_force-motors_assets_images_gurkha.svg" alt="Gurkha" class="img-fluid" />
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Desktop -->
-
-        <!-- Mobile -->
-        <div class="d-block d-lg-block d-xl-none mobileNav" id="mobileNav">
-            <div class="mobileFixTop d-flex justify-content-between">
-                <div class="col-6 d-flex align-items-center mobileHeader-left">
-                    <a href="index.html">
-                        <img src="local_assets/iaw-logo-white.svg" alt="IAW" style="height: 38px;" />
-                    </a>
-                </div>
-                <div class="
-					col-6
-					d-flex
-					align-items-center
-					justify-content-end
-					mobileHeader-right
-				">
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0);" class="searchHeader">
-                                <i>
-                                    <!-- <img class="img-fluid" src="local_assets/wp-content_themes_force-motors_assets_images_search.png" alt="" /> -->
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MENU</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- search popup -->
-        <div class="searchpopup" style="display:none;">
-            <div class="mb-3 searchfield">
-                <span class="sp-searchico"></span>
-                <input type="text" class="form-control" placeholder="Search" name="s" id="searchvalue">
-                <button class="searchArrow" type="button" id="searchbtn"></button>
-            </div>
-        </div>
-        <!-- search popup -->
-
-        <!--offcanvas menu-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="
-				offcanvas-body
-				d-flex
-				align-items-center
-				justify-content-end
-				text-end
-				flex-wrap
-			">
-                <div class="col-12 navLinks">
-                    <ul>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="https://forcegurkha.co.in/explore/">Explore</a></li>
-                                                <li><a href="https://forcegurkha.co.in/service/">Service</a></li>
-                                                <li><a href="https://forcegurkha.co.in/gallery/">Gallery</a></li>
-                                                <li><a href="https://forcegurkha.co.in/gurkha-world/">Gurkha World</a></li>
-                                                <li><a href="media-events.html">News & Events</a></li>
-                        
-                        <li>
-                            <a href="https://forcegurkha.co.in/book-a-test-drive/"><span>Schedule a <br />Test Drive</span></a>
-                        </li>
-                        <li>
-                            <a href="locate-dealer.html"><span>Dealer <br />Locator</span></a>
-                        </li>
-                        <!--
-					<li><a href="specifications.php">Specifications</a></li>
-					<li><a href="gallery.php">Gallery</a></li>
-					<li><a href="news-and-events.php">News & Events</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">Gurlha World</a></li>
--->
-                    </ul>
-                </div>
-
-                <div class="col-12 socialLinks">
-                    <h5>Follow Us</h5>
-
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/ForceGurkha4x4" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/forcegurkha4x4" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/forcegurkha/" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/c/ForceGurkha" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--offcanvas menu-->
-
-        <!-- Mobile -->
-    </header>
+    <header id="site-header" class="site-header dynamic-header menu-dropdown-tablet"><div class="header-inner"><nav class="site-navigation show" aria-label="Main menu"><ul id="menu-mein-menu" class="menu"><li id="menu-item-home" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li><li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="vehicles.html">Vehicles</a></li></ul></nav><div class="site-branding show-logo"><div class="site-logo show">
+<a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="94" height="61" src="local_assets/iaw-logo.svg" class="custom-logo" alt="IAW" decoding="async" /></a></div></div><div class="right-menu">
+<a href="media-events.html">Media & Events</a><a href="contact.html">Contact</a></div><div href="" class="mobhambgmenu"><img src="local_assets/wp-content_uploads_2025_03_hambg-menu-black.svg"></div>
+<a href="#" class="mobdealerlink"><img src="local_assets/wp-content_uploads_2025_03_blk-location.svg"></a><div class="site-navigation-toggle-holder show">
+<button type="button" class="site-navigation-toggle" aria-label="Menu">
+<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
+</button></div><nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert><ul id="menu-mein-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="vehicles.html">Vehicles</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="media-events.html">Media & Events</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.html">Contact</a></li></ul></nav></div><div class="mobile-menu"><div class="mobile-menu-inner"><div class="mob-menu-title">
+<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item"><div href="#." class="mobmaintablink mobmenuhaschild" data-tag="mob_companymenu">Company</div><ul class="secondlevel-menu" id="mob_companymenu"><li><a href="about.html">About Us</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
+Traveller N</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_urbania" class="bus-catlink">
+Urbania DX</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_monobus" class="bus-catlink">
+Monobus</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_trax" class="bus-catlink">
+Trax</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_special-applications" class="bus-catlink">
+Special Applications</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_gurkha" class="bus-catlink">
+Gurkha</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_ev" class="bus-catlink">
+EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv" id="mobcatname_traveller"><ul class="mob-model-firstlevel"><h5>Traveller N</h5><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3050WB-menu-img.webp" alt="Traveller N 3050WB" />
+<span>Traveller N 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3050WB-menu_1.webp" alt="Traveller N 3350WB" />
+<span>Traveller N 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3700WB-12D17D-Banner_Menu_1.webp" alt="Traveller N 3700WB" />
+<span>Traveller N 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-4020WB-menu.webp" alt="Traveller N 4020WB" />
+<span>Traveller N 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-3350WB-menu-img.webp" alt="Traveller N Wider Body 3350WB" />
+<span>Traveller N Wider Body 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-4020WB-menu.webp" alt="Traveller N Wider Body 4020WB" />
+<span>Traveller N Wider Body 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-4020-WB-CNG-menu-new.png" alt="Traveller N 4020WB CNG" />
+<span>Traveller N 4020WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-4020-WB-CNG-menu.webp" alt="Traveller N Wider Body 4020WB CNG" />
+<span>Traveller N Wider Body 4020WB CNG</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>School Buses</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3050WB" />
+<span>Traveller N School Bus 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3350WB" />
+<span>Traveller N School Bus 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3700WB" />
+<span>Traveller N School Bus 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 4020WB" />
+<span>Traveller N School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-School-Bus-4020WB-menu.webp" alt="Traveller N Wider Body School Bus 4020WB" />
+<span>Traveller N Wider Body School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3700WB CNG" />
+<span>Traveller N School Bus 3700WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-School-Bus-4020WB-menu.webp" alt="Traveller N Wider Body School Bus 4020WB CNG" />
+<span>Traveller N Wider Body School Bus 4020WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 4020WB CNG" />
+<span>Traveller N School Bus 4020WB CNG</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Ambulances</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu_1.webp" alt="Traveller N Ambulance 3350WB B-Type" />
+<span>Traveller N Ambulance 3350WB B-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu.webp" alt="Traveller N Ambulance 3350WB C-Type" />
+<span>Traveller N Ambulance 3350WB C-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu.webp" alt="Traveller N Ambulance 3350WB D-Type" />
+<span>Traveller N Ambulance 3350WB D-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-C-Type-menu-img.webp" alt="Traveller N Wider Body Ambulance 3350WB B-Type" />
+<span>Traveller N Wider Body Ambulance 3350WB B-Type</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Delivery Vans</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3050WB" />
+<span>Traveller N DV AC 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3350WB" />
+<span>Traveller N DV AC 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3700WB" />
+<span>Traveller N DV AC 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 4020WB" />
+<span>Traveller N DV AC 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N Wider Body DV AC 4020WB" />
+<span>Traveller N Wider Body DV AC 4020WB</span>
+</a></li></ul></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_urbania"><ul class="mob-model-firstlevel"><h5>Urbania DX</h5><li><a href="#." class="catlink-disable"><span>Urbania</span></a><ul class="menu-secondlevel-post"><li>
+<a href="urbania-dx.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2026_07_urbania-menu.png" alt="Urbania DX" />
+<span>Urbania DX</span>
+</a></li></ul></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_monobus"><ul class="mob-model-firstlevel"><h5>Monobus</h5><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_10_monobus-4020wb-lx-thumb.png" alt="Monobus LX 4020WB" />
+<span>Monobus LX 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_10_monobus-5200wb-thumb.png" alt="Monobus 5200WB" />
+<span>Monobus 5200WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Monobus-4020WB.png" alt="Monobus 4020WB" />
+<span>Monobus 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Monobus-5200WB.png" alt="Monobus 5200WB" />
+<span>Monobus 5200WB</span>
+</a></li></ul><p class="menu-cusrom-txt"><strong>Note:</strong> Available in Non-AC, AC with Stuck Glass, Diesel & CNG <strong>(For 4020 WB)</strong> | Available in Non-AC, Diesel & CNG <strong>(For 5200 WB)</strong></p></li><li><a href="#." class="catlink-disable"><span>School Buses</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_MONOBUS-4200-menu.png" alt="Monobus School Bus 4020WB" />
+<span>Monobus School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_monobus-5200-menu.png" alt="Monobus School Bus 5200WB" />
+<span>Monobus School Bus 5200WB</span>
+</a></li></ul><p class="menu-cusrom-txt"><strong>Note:</strong> Available in Non-AC, AC with Stuck Glass, Diesel & CNG <strong>(For 4020 WB)</strong> | Available in Non-AC, Diesel & CNG <strong>(For 5200 WB)</strong></p></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_trax"><ul class="mob-model-firstlevel"><h5>Trax</h5><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-Cruiser-1.png" alt="Trax Cruiser" />
+<span>Trax Cruiser</span>
+</a></li><li>
+<a href="vehicle-trax-toofan.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Toofan-menu.png" alt="Trax Toofan" />
+<span>Trax Toofan</span>
+</a></li><li>
+<a href="vehicle-citiline.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_citiline-1.png" alt="Citiline" />
+<span>Citiline</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2026_05_Trax-Gama-menu.webp" alt="Trax Gama" />
+<span>Trax Gama</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>School Van</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_04_Trax-Cruiser-School-Van.png" alt="Trax Cruiser School Van" />
+<span>Trax Cruiser School Van</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Ambulance</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-Trax-Ambulance5D1P-menu.png" alt="Trax Ambulance" />
+<span>Trax Ambulance</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Delivery Vans</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-DV-2.png" alt="Trax DV" />
+<span>Trax DV</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-crew-van-menu.png" alt="Trax Crew Van" />
+<span>Trax Crew Van</span>
+</a></li></ul></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_special-applications"><ul class="mob-model-firstlevel"><h5>Special Applications</h5><li><a href="#." class="catlink-disable"><span>Special Application</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Traveller-Prison-Van-1.png" alt="Traveller Prison Van" />
+<span>Traveller Prison Van</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_TRAX-School-Bus-1.png" alt="Traveller Troop Carrier" />
+<span>Traveller Troop Carrier</span>
+</a></li><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_mu-menu.png" alt="Traveller Mobile Medical Unit" />
+<span>Traveller Mobile Medical Unit</span>
+</a></li><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Traveller-Forensic-Van-menu.png" alt="Traveller Forensic Van" />
+<span>Traveller Forensic Van</span>
+</a></li><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Trax-Cash-Van.png" alt="Trax Cruiser Cash Van" />
+<span>Trax Cruiser Cash Van</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_Trax-First-Responder-Vehicle-TH.png" alt="Trax First Responder Vehicle" />
+<span>Trax First Responder Vehicle</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_jungle-safari-Menu.png" alt="Trax Jungle Safari" />
+<span>Trax Jungle Safari</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_TRAX-School-Bus.png" alt="Trax Police Van" />
+<span>Trax Police Van</span>
+</a></li></ul></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_gurkha"><ul class="mob-model-firstlevel"><h5>Gurkha</h5><li><a href="#." class="catlink-disable"><span>Gurkha</span></a><ul class="menu-secondlevel-post"><li>
+<a href="gurkha.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_gurkha-menu-img.png" alt="Gurkha" />
+<span>Gurkha</span>
+</a></li></ul></li></ul></div><div class="mobmcontainer hidediv" id="mobcatname_ev"><ul class="mob-model-firstlevel"><h5>EV</h5><li><a href="#." class="catlink-disable"><span>EV</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-ev.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_e-Traveller-Smart-Citibus-EV-menu.webp" alt="e-Traveller Smart Citibus EV" />
+<span>e-Traveller Smart Citibus EV</span>
+</a></li></ul></li></ul></div></div></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Merchandise & Scale Models</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="prices.html">Prices</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="investors.html">Investors</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Initiatives</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Newsroom</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">People</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="contact.html">Contact</a></div></div></div></div><style type="text/css">.activemobmodel {
+        display: block;
+    }
+    .hidediv {
+        display: none;
+    }
+  .mobile-menu {
+    position: fixed;
+    max-width: 100%;
+    padding: 20px;
+    right: 0;
+    left: -100%;
+    top: 0;
+    z-index: 9999;
+    background: #ffffff;
+    height: 100vh;
+    transition: all 0.7s;
+    overflow: hidden;
+  }
+  .showmobmenu {
+    left: 0% !important;
+  }
+  .mobmaintablink {
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    border-bottom: 1px solid #E2E5EB;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 500 !important;
+    cursor: pointer;
+  }
+  .secondlevel-menu {
+    margin: 0px 0;
+    padding: 0;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    height: 0;
+  }
+  .secondlevel-menu.activechildmenu {
+    margin: 20px 0;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+  .secondlevel-menu > li a {
+    font-size: 18px;
+    padding: 5px 0;
+    display: block;
+  }
+  .mobmaintablink:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 23px;
+    width: 20px;
+    height: 2px;
+    background: #000000;
+  }
+  .mobmaintablink:after {
+    position: absolute;
+    content: '';
+    right: 9px;
+    top: 14px;
+    width: 2px;
+    height: 20px;
+    background: #000000;
+  }
+  .nochildmobmenu .mobmaintablink:after, .nochildmobmenu .mobmaintablink:before {
+    display: none;
+  }
+  .mob-menu-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .mob-menu-title img {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .mobsecondlevelparent .bus-catlink {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 19px;
+  }
+  .mobsecondlevelparent .bus-catlink:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 12px;
+    width: 10px;
+    height: 16px;
+    background: url(local_assets/wp-content_uploads_2025_02_menu-arrow-black.svg) no-repeat;
+    background-size: 8px;
+  }
+  .bus-catlink {
+    cursor: pointer;
+  }
+  .mob-model-firstlevel {
+    margin: 0;
+    padding: 0 0 150px;
+    list-style: none;
+    background:#ffffff;
+  }
+  .mob-model-secondlevel {
+    margin: 30px 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mob-model-secondlevel li {
+    width: 49%;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+  }
+  .mob-model-secondlevel li a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px 25px;
+  }
+  .mob-model-secondlevel li a span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    max-width: 191px;
+    line-height: 23px;
+  }
+  .mob-model-secondlevel li a img {
+    height: 141px;
+    width: auto;
+  }
+  .mobmcontainer#mobcatname_gurkha .mob-model-secondlevel li:first-child, .mobmcontainer#mobcatname_urbania .mob-model-secondlevel li:first-child {
+    display: none !important;
+  }
+  .mob-model-firstlevel .catlink-disable span {
+    display: block !important;
+    background: transparent !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-size: 21px !important;
+    color: #000000;
+  }
+  .mob-model-firstlevel .catlink-disable:after {
+    display: none !important;
+  }
+  .mob-menu-models {
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    width: 100%;
+    left: auto;
+    right: -150%;
+    z-index: 99;
+    height: 100%;
+    transition: all 1s;
+  }
+  .mobmcontainer {
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    width: 100%;
+    left: auto;
+    right: -150%;
+    height: 100%;
+    transition: all 1s;
+  }
+  .firstlevel-menu {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .mobmcontainer.activemobmodel {
+    right: 150% !important
+  }
+  .closemobmenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .closemobmenu:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 10px;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    transition: all 0.5s;
+    transform: rotate(45deg);
+  }
+  .closemobmenu:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 10px;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    transition: all 0.5s;
+    transform: rotate(-45deg);
+  }
+  .mob-model-firstlevel h5 {
+    display: block !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-size: 23px !important;
+    color: #0074C3;
+    position: relative;
+    cursor: pointer;
+  }
+  .mob-model-firstlevel h5:after {
+    background: url(local_assets/wp-content_uploads_2025_02_menuback-arrow.svg) no-repeat;
+    position: absolute;
+    content: 'back';
+    left: 0;
+    top: 6px;
+    width: 65px;
+    height: 18px;
+    background-size: 9px;
+    font-size: 15px;
+    color: #626262;
+  }
+  body.unscroll {
+    overflow:hidden;
+  }
+  .activeurl, .activeurl span {
+    color: var(--hover) !important;
+  }
+  @media(max-width:1024px) {
+    div#mobcatname_urbania .catlink-disable, div#mobcatname_gurkha .catlink-disable {
+      display: none;
+    }
+    .customugtext {
+      margin-top: 20px;
+    }
+    .menu-secondlevel-post li {
+      width: 25% !important;
+    }
+  } 
+  @media(max-width:767px) {
+    .customugtext {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .mob-model-firstlevel .catlink-disable span {
+      padding: 10px 0 20px !important;
+    }
+    .menu-secondlevel-post li {
+      width: 50% !important;
+    }
+    .mob-model-secondlevel li a span {
+      line-height: 20px !important;
+      font-size: 14px !important;
+      margin-top: 10px !important;
+    }
+    .mob-model-secondlevel li a {
+      padding: 0 5px 25px !important; 
+    }
+    .mob-model-secondlevel li a img {
+      height: 78px !important;
+    }
+    .mob-model-secondlevel {
+        margin: 30px 0px;
+    }
+  }</style> <script type="text/javascript" src="data:text/javascript;base64,alF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpe2pRdWVyeSgnLm1vYmhhbWJnbWVudScpLmNsaWNrKGZ1bmN0aW9uKCl7alF1ZXJ5KCcubW9iaWxlLW1lbnUnKS5hZGRDbGFzcygnc2hvd21vYm1lbnUnKTtqUXVlcnkoJ2JvZHknKS5hZGRDbGFzcygndW5zY3JvbGwnKX0pO2pRdWVyeSgnLmNsb3NlbW9ibWVudScpLmNsaWNrKGZ1bmN0aW9uKCl7alF1ZXJ5KCcubW9iaWxlLW1lbnUnKS5yZW1vdmVDbGFzcygnc2hvd21vYm1lbnUnKTtqUXVlcnkoJ2JvZHknKS5yZW1vdmVDbGFzcygndW5zY3JvbGwnKX0pO2pRdWVyeSgnLm1vYi1tb2RlbC1maXJzdGxldmVsIGg1JykuY2xpY2soZnVuY3Rpb24oKXtqUXVlcnkoJy5tb2JtY29udGFpbmVyJykucmVtb3ZlQ2xhc3MoJ2FjdGl2ZW1vYm1vZGVsJyl9KTtqUXVlcnkoJy5tb2JzZWNvbmRsZXZlbHBhcmVudCAuYnVzLWNhdGxpbmsnKS5jbGljayhmdW5jdGlvbigpe2pRdWVyeSgnLm1vYnNlY29uZGxldmVscGFyZW50IC5idXMtY2F0bGluaycpLnJlbW92ZUNsYXNzKCdhY3RpdmVtb2RlbHRhYicpO2pRdWVyeSh0aGlzKS5hZGRDbGFzcygnYWN0aXZlbW9kZWx0YWInKTt2YXIgdGFnaWQ9alF1ZXJ5KHRoaXMpLmRhdGEoJ3RhZycpO2pRdWVyeSgnLm1vYm1jb250YWluZXInKS5yZW1vdmVDbGFzcygnYWN0aXZlbW9ibW9kZWwnKS5hZGRDbGFzcygnaGlkZWRpdicpO2pRdWVyeSgnIycrdGFnaWQpLmFkZENsYXNzKCdhY3RpdmVtb2Jtb2RlbCcpLnJlbW92ZUNsYXNzKCdoaWRlZGl2Jyl9KX0p" defer></script> <script type="text/javascript" src="data:text/javascript;base64,alF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpe2pRdWVyeSgnLm1vYm1lbnVoYXNjaGlsZCcpLmNsaWNrKGZ1bmN0aW9uKCl7alF1ZXJ5KCcubW9ibWVudWhhc2NoaWxkJykucmVtb3ZlQ2xhc3MoJ2FjdGl2ZWNoaWxkdGFiJyk7alF1ZXJ5KHRoaXMpLmFkZENsYXNzKCdhY3RpdmVjaGlsZHRhYicpO3ZhciB0YWdpZD1qUXVlcnkodGhpcykuZGF0YSgndGFnJyk7alF1ZXJ5KCcuc2Vjb25kbGV2ZWwtbWVudScpLnJlbW92ZUNsYXNzKCdhY3RpdmVjaGlsZG1lbnUnKTtqUXVlcnkoJyMnK3RhZ2lkKS5hZGRDbGFzcygnYWN0aXZlY2hpbGRtZW51Jyl9KTt2YXIgY3VycmVudFBhdGg9d2luZG93LmxvY2F0aW9uLnBhdGhuYW1lO2pRdWVyeSgnLnNlY29uZGxldmVsLW1lbnUgPiBsaSBhLCB1bC5tZW51LXNlY29uZGxldmVsLXBvc3QgYSwgLm5vY2hpbGRtb2JtZW51IGEnKS5lYWNoKGZ1bmN0aW9uKCl7dmFyIGxpbmtQYXRoPWpRdWVyeSgnPGE+JykuYXR0cignaHJlZicsalF1ZXJ5KHRoaXMpLmF0dHIoJ2hyZWYnKSlbMF0ucGF0aG5hbWU7aWYoY3VycmVudFBhdGg9PT1saW5rUGF0aCl7alF1ZXJ5KHRoaXMpLmFkZENsYXNzKCdhY3RpdmV1cmwnKX19KX0p" defer></script> <div class="mega-menu-wrap hidemenu"><div class="ast-container"><div class="mega-menu-row"><div class="mega-menu-tabs"><div class="categorywrap"><h3>Commercial Vehicles</h3><ul><li class="cattabs"><a href="category-traveller.html" data-tag="catname_traveller">Traveller N</a></li><li class="cattabs"><a href="urbania-dx.html" data-tag="catname_urbania">Urbania DX</a></li><li class="cattabs"><a href="category-monobus.html" data-tag="catname_monobus">Monobus</a></li><li class="cattabs"><a href="category-trax.html" data-tag="catname_trax">Trax</a></li><li class="cattabs"><a href="category-special-applications.html" data-tag="catname_special-applications">Special Applications</a></li></ul></div><div class="categorywrap"><h3>Special Vehicles</h3><ul><li class="cattabs"><a href="gurkha.html" data-tag="catname_gurkha">Gurkha</a></li></ul></div><div class="categorywrap"><h3>Electric Vehicle</h3><ul><li class="cattabs"><a href="category-ev.html" data-tag="catname_ev">EV</a></li></ul></div></div><div class="mega-menu-links"><div class="mm-container hidediv" id="catname_traveller"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3050WB-menu-img.webp" alt="Traveller N 3050WB" />
+<span>Traveller N 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3050WB-menu_1.webp" alt="Traveller N 3350WB" />
+<span>Traveller N 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-3700WB-12D17D-Banner_Menu_1.webp" alt="Traveller N 3700WB" />
+<span>Traveller N 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-4020WB-menu.webp" alt="Traveller N 4020WB" />
+<span>Traveller N 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-3350WB-menu-img.webp" alt="Traveller N Wider Body 3350WB" />
+<span>Traveller N Wider Body 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-4020WB-menu.webp" alt="Traveller N Wider Body 4020WB" />
+<span>Traveller N Wider Body 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-4020-WB-CNG-menu-new.png" alt="Traveller N 4020WB CNG" />
+<span>Traveller N 4020WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-4020-WB-CNG-menu.webp" alt="Traveller N Wider Body 4020WB CNG" />
+<span>Traveller N Wider Body 4020WB CNG</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>School Buses</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3050WB" />
+<span>Traveller N School Bus 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3350WB" />
+<span>Traveller N School Bus 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3700WB" />
+<span>Traveller N School Bus 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 4020WB" />
+<span>Traveller N School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-School-Bus-4020WB-menu.webp" alt="Traveller N Wider Body School Bus 4020WB" />
+<span>Traveller N Wider Body School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3700wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 3700WB CNG" />
+<span>Traveller N School Bus 3700WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Wider-Body-School-Bus-4020WB-menu.webp" alt="Traveller N Wider Body School Bus 4020WB CNG" />
+<span>Traveller N Wider Body School Bus 4020WB CNG</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb-cng.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-School-Bus-4020WB-menu_1.webp" alt="Traveller N School Bus 4020WB CNG" />
+<span>Traveller N School Bus 4020WB CNG</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Ambulances</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu_1.webp" alt="Traveller N Ambulance 3350WB B-Type" />
+<span>Traveller N Ambulance 3350WB B-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu.webp" alt="Traveller N Ambulance 3350WB C-Type" />
+<span>Traveller N Ambulance 3350WB C-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-B-Type-menu.webp" alt="Traveller N Ambulance 3350WB D-Type" />
+<span>Traveller N Ambulance 3350WB D-Type</span>
+</a></li><li>
+<a href="vehicle-traveller-3350wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-Ambulance-3350WB-C-Type-menu-img.webp" alt="Traveller N Wider Body Ambulance 3350WB B-Type" />
+<span>Traveller N Wider Body Ambulance 3350WB B-Type</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Delivery Vans</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3050WB" />
+<span>Traveller N DV AC 3050WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3350WB" />
+<span>Traveller N DV AC 3350WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 3700WB" />
+<span>Traveller N DV AC 3700WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N DV AC 4020WB" />
+<span>Traveller N DV AC 4020WB</span>
+</a></li><li>
+<a href="vehicle-traveller-3050wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Traveller-DV-3050WB-menu_1.webp" alt="Traveller N Wider Body DV AC 4020WB" />
+<span>Traveller N Wider Body DV AC 4020WB</span>
+</a></li></ul></li></ul></div><div class="mm-container hidediv" id="catname_urbania"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Urbania</span></a><ul class="menu-secondlevel-post"><li>
+<a href="urbania-dx.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2026_07_urbania-menu.png" alt="Urbania DX" />
+<span>Urbania DX</span>
+</a></li></ul></li></ul></div><div class="mm-container hidediv" id="catname_monobus"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_10_monobus-4020wb-lx-thumb.png" alt="Monobus LX 4020WB" />
+<span>Monobus LX 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_10_monobus-5200wb-thumb.png" alt="Monobus 5200WB" />
+<span>Monobus 5200WB</span>
+</a></li><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Monobus-4020WB.png" alt="Monobus 4020WB" />
+<span>Monobus 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Monobus-5200WB.png" alt="Monobus 5200WB" />
+<span>Monobus 5200WB</span>
+</a></li></ul><p class="menu-cusrom-txt"><strong>Note:</strong> Available in Non-AC, AC with Stuck Glass, Diesel & CNG <strong>(For 4020 WB)</strong> | Available in Non-AC, Diesel & CNG <strong>(For 5200 WB)</strong></p></li><li><a href="#." class="catlink-disable"><span>School Buses</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-traveller-4020wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_MONOBUS-4200-menu.png" alt="Monobus School Bus 4020WB" />
+<span>Monobus School Bus 4020WB</span>
+</a></li><li>
+<a href="vehicle-monobus-5200wb.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_monobus-5200-menu.png" alt="Monobus School Bus 5200WB" />
+<span>Monobus School Bus 5200WB</span>
+</a></li></ul><p class="menu-cusrom-txt"><strong>Note:</strong> Available in Non-AC, AC with Stuck Glass, Diesel & CNG <strong>(For 4020 WB)</strong> | Available in Non-AC, Diesel & CNG <strong>(For 5200 WB)</strong></p></li></ul></div><div class="mm-container hidediv" id="catname_trax"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Passenger Vehicles</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-Cruiser-1.png" alt="Trax Cruiser" />
+<span>Trax Cruiser</span>
+</a></li><li>
+<a href="vehicle-trax-toofan.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Toofan-menu.png" alt="Trax Toofan" />
+<span>Trax Toofan</span>
+</a></li><li>
+<a href="vehicle-citiline.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_citiline-1.png" alt="Citiline" />
+<span>Citiline</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2026_05_Trax-Gama-menu.webp" alt="Trax Gama" />
+<span>Trax Gama</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>School Van</span></a><ul class="menu-secondlevel-post"><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_04_Trax-Cruiser-School-Van.png" alt="Trax Cruiser School Van" />
+<span>Trax Cruiser School Van</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Ambulance</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-Trax-Ambulance5D1P-menu.png" alt="Trax Ambulance" />
+<span>Trax Ambulance</span>
+</a></li></ul></li><li><a href="#." class="catlink-disable"><span>Delivery Vans</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-DV-2.png" alt="Trax DV" />
+<span>Trax DV</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_Trax-crew-van-menu.png" alt="Trax Crew Van" />
+<span>Trax Crew Van</span>
+</a></li></ul></li></ul></div><div class="mm-container hidediv" id="catname_special-applications"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Special Application</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Traveller-Prison-Van-1.png" alt="Traveller Prison Van" />
+<span>Traveller Prison Van</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_TRAX-School-Bus-1.png" alt="Traveller Troop Carrier" />
+<span>Traveller Troop Carrier</span>
+</a></li><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_mu-menu.png" alt="Traveller Mobile Medical Unit" />
+<span>Traveller Mobile Medical Unit</span>
+</a></li><li>
+<a href="category-special-applications.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Traveller-Forensic-Van-menu.png" alt="Traveller Forensic Van" />
+<span>Traveller Forensic Van</span>
+</a></li><li>
+<a href="vehicle-trax-cruiser.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_Trax-Cash-Van.png" alt="Trax Cruiser Cash Van" />
+<span>Trax Cruiser Cash Van</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_Trax-First-Responder-Vehicle-TH.png" alt="Trax First Responder Vehicle" />
+<span>Trax First Responder Vehicle</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_jungle-safari-Menu.png" alt="Trax Jungle Safari" />
+<span>Trax Jungle Safari</span>
+</a></li><li>
+<a href="category-trax.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_02_TRAX-School-Bus.png" alt="Trax Police Van" />
+<span>Trax Police Van</span>
+</a></li></ul></li></ul></div><div class="mm-container hidediv" id="catname_gurkha"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>Gurkha</span></a><ul class="menu-secondlevel-post"><li>
+<a href="gurkha.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_05_gurkha-menu-img.png" alt="Gurkha" />
+<span>Gurkha</span>
+</a></li></ul></li></ul></div><div class="mm-container hidediv" id="catname_ev"><ul class="menu-firstlevel-post"><li><a href="#." class="catlink-disable"><span>EV</span></a><ul class="menu-secondlevel-post"><li>
+<a href="category-ev.html" class="prod-card">
+<img src="local_assets/wp-content_uploads_2025_03_e-Traveller-Smart-Citibus-EV-menu.webp" alt="e-Traveller Smart Citibus EV" />
+<span>e-Traveller Smart Citibus EV</span>
+</a></li></ul></li></ul></div></div></div></div></div><style type="text/css">.active{
+            display: block;
+        }
+        .hidediv {
+            display: none;
+        }
+        .mega-menu-wrap.hidemenu {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -9;
+        }
+        .mega-menu-wrap {
+            transition: all 0.1s;
+            position: fixed;
+            top: 75px;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+            z-index: 9;
+            margin: 0 40px;
+        }
+        .mega-menu-wrap .ast-container {
+      background: #EBEEF3;
+      padding: 20px 20px 0;
+    }
+        .mega-menu-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 385px;
+        }
+        .mega-menu-tabs {
+            width: 20%;
+        }
+        .mega-menu-links {
+      width: 76%;
+      height: 550px;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+        .mega-menu-tabs ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    .categorywrap {
+      background: #FFFFFF;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .categorywrap h3 {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0;
+    }
+        .mega-menu-tabs ul li a {
+      font-size: 16px;
+      line-height: 34px;
+      background: #ffffff;
+      display: block;
+      transition: all 0.5s;
+      position: relative;
+      border-bottom: 1px solid #E2E5EB;
+    }
+        .activecattab {
+            color: #0074C3 !important;
+        }
+        .mega-menu-tabs ul li a:after {
+            position: absolute;
+            content: '';
+            right: 0px;
+            top: 12px;
+            background: #ffffff url(local_assets/wp-content_uploads_2025_02_menu-arrow-black.svg) no-repeat center right;
+            width: 5px;
+            height: 10px;
+            opacity: 1;
+            transition: all 0.5s;
+        }
+        .mega-menu-tabs ul li a.activecattab:after {
+            background: #ffffff url(local_assets/wp-content_uploads_2025_02_menu-arrow-blue.svg) no-repeat center right;
+        }
+        ul.menu-firstlevel-post {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul.menu-secondlevel-post {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul.menu-firstlevel-post li a {
+            position: relative;
+            display: block;
+        }
+        ul.menu-firstlevel-post li a:hover {
+            color: #0074C3 !important;
+        }
+        ul.menu-secondlevel-post a {
+            color: #697281 !important;
+            font-weight: 400 !important;
+            font-size: 13px !important;
+            line-height: 18px;
+            position: relative;
+            transition: all 0.5s;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        ul.menu-secondlevel-post a:hover {
+            color: #0074C3 !important;
+        }
+        ul.menu-secondlevel-post a span {
+            color: #000000;
+            display: block;
+            max-width: 100%;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+        ul.menu-firstlevel-post > li {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .mega-menu-links h3 {
+            margin-bottom: 20px;
+        }
+        .menu-secondlevel-post li {
+            width: 15%;
+            margin-bottom: 20px;
+            padding: 0 13px;
+        }
+        .catlink-disable {
+            position: relative !important;
+            margin-bottom: 20px;
+            font-weight: 500 !important;
+            color: #0074C3;
+            font-size: 18px;
+        }
+        .catlink-disable span {
+            background: #EBEEF3;
+            padding-right: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 9;
+        }
+        .catlink-disable:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: #70707030;
+            top: 15px;
+        }
+        .scroll-down header#site-header .mega-menu-wrap {
+            top:0px;
+        }
+    .menu-cusrom-txt {
+      font-size: 12px;
+      line-height: 21px;
+      margin-bottom: 0;
+      color: #555;
+    }
+    .green-bg {
+      background-color: #46b07f;
+      color: #fff !important;
+      padding: 1px 2px;
+      border-radius: 3px;
+      display: inline-block !important;
+    }
+    .customugtext .forcethembtn {
+      display: inline-block !important;
+      margin-left: 7px;
+    }
+    .customugtext {
+      display: flex;
+      gap: 20px;
+    }
+    .gutext span {
+      display: block;
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+    .gutext a span {
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+    .guimg {
+      max-width: 175px;
+    }</style> <script type="text/javascript" src="data:text/javascript;base64,alF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpe2pRdWVyeSgnLmNhdGVnb3J5d3JhcDpudGgtY2hpbGQoMSkgLmNhdHRhYnM6bnRoLWNoaWxkKDEpIGEnKS5hZGRDbGFzcygnYWN0aXZlY2F0dGFiJyk7alF1ZXJ5KCcubW0tY29udGFpbmVyOm50aC1jaGlsZCgxKScpLnJlbW92ZUNsYXNzKCdoaWRlZGl2Jyk7alF1ZXJ5KCcuY2F0dGFicyBhJykuaG92ZXIoZnVuY3Rpb24oKXtqUXVlcnkoJy5jYXR0YWJzIGEnKS5yZW1vdmVDbGFzcygnYWN0aXZlY2F0dGFiJyk7alF1ZXJ5KHRoaXMpLmFkZENsYXNzKCdhY3RpdmVjYXR0YWInKTt2YXIgdGFnaWQ9alF1ZXJ5KHRoaXMpLmRhdGEoJ3RhZycpO2pRdWVyeSgnLm1tLWNvbnRhaW5lcicpLnJlbW92ZUNsYXNzKCdhY3RpdmUnKS5hZGRDbGFzcygnaGlkZWRpdicpO2pRdWVyeSgnIycrdGFnaWQpLmFkZENsYXNzKCdhY3RpdmUnKS5yZW1vdmVDbGFzcygnaGlkZWRpdicpfSl9KTtqUXVlcnkoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCl7alF1ZXJ5KCJsaSNtZW51LWl0ZW0tMTk0IGEsIC5tZWdhLW1lbnUtd3JhcCIpLmhvdmVyKGZ1bmN0aW9uKCl7alF1ZXJ5KCIubWVnYS1tZW51LXdyYXAiKS5yZW1vdmVDbGFzcygiaGlkZW1lbnUiKX0sZnVuY3Rpb24oKXtpZighalF1ZXJ5KCJsaSNtZW51LWl0ZW0tMTk0IGEiKS5pcygiOmhvdmVyIikmJiFqUXVlcnkoIi5tZWdhLW1lbnUtd3JhcCIpLmlzKCI6aG92ZXIiKSl7alF1ZXJ5KCIubWVnYS1tZW51LXdyYXAiKS5hZGRDbGFzcygiaGlkZW1lbnUiKX19KX0pO2pRdWVyeShkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKXtqUXVlcnkoJy5tZW51LXNlY29uZGxldmVsLXBvc3Qgc3BhbicpLmVhY2goZnVuY3Rpb24oKXtsZXQgdGV4dD1qUXVlcnkodGhpcykuaHRtbCgpO2xldCB1cGRhdGVkVGV4dD10ZXh0LnJlcGxhY2UoLyhDTkcpL2csJzxzcGFuIGNsYXNzPSJncmVlbi1iZyI+JDE8L3NwYW4+Jyk7alF1ZXJ5KHRoaXMpLmh0bWwodXBkYXRlZFRleHQpfSl9KTtqUXVlcnkoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCl7alF1ZXJ5KCdhW2hyZWY9Imh0dHBzOi8vd3d3LmZvcmNlbW90b3JzLmNvbS92ZWhpY2xlcy1jYXRlZ29yeS91cmJhbmlhLyJdLCBhW2hyZWY9Imh0dHBzOi8vd3d3LmZvcmNlbW90b3JzLmNvbS92ZWhpY2xlcy1jYXRlZ29yeS9ndXJraGEvIl0nKS5hdHRyKCd0YXJnZXQnLCdfYmxhbmsnKX0p" defer></script></header>
     <!--Header-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css" rel="stylesheet" />
 <style>
@@ -3598,100 +4490,9 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
 		<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
 	</script>
-	<footer class="footer">
-   <!-- <img src="/assets/images/footer-bg.png" class="img-fluid" alt="" />-->
-
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="
-								col-xs-12 col-12 col-sm-4 col-md-2
-								mobile-grid
-								footer-logo 
-							ip">
-                    <img src="local_assets/iaw-logo-white.svg" alt="IAW" style="height: 48px;" />
-                </div>
-
-                <div class="col-xs-12 col-12 col-sm-4 col-md-2 mobile-grid ip">
-                    <h6>Toll Free</h6>
-                    <a href="tel: Contact Us" class="tollFree">Contact Us</a>
-                </div>
-
-                <div class="col-xs-12 col-12 col-sm-4 col-md-2 mobile-grid ip">
-                    <h6>Connect with us</h6>
-                    <a class="mailId" href="/cdn-cgi/l/email-protection#492e3c3b222128092f263b2a2c24263d263b3a672a2624"><span class="__cf_email__" data-cfemail="cdaab8bfa6a5ac8daba2bfaea8a0a2b9a2bfbee3aea2a0">[email&#160;protected]</span></a>
-
-                    <p>
-                        IAW Motors<br>Mumbai - Pune Road,<br> Akurdi, Pune<br>
-                        Maharashtra - 411035
-                    </p>
-                </div>
-
-                <div class="col-xs-12 col-12 col-sm-4 col-md-2 mobile-grid ip">
-                    <h6><a href="https://forcegurkha.co.in/explore" class="faqLink">Explore</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/service" class="faqLink">Service</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/gallery" class="faqLink">Gallery</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/gurkha-world" class="faqLink">Gurkha World</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/news-events" class="faqLink">News & Events</a></h6>
-                </div>
-
-                <div class="col-xs-12 col-12 col-sm-4 col-md-2 mobile-grid ip">
-                    <h6><a href="https://forcegurkha.co.in/book-a-test-drive" class="faqLink">Book a Test Drive</a></h6>
-                    <!-- <h6><a href="https://forcegurkha.co.in/find-dealer" class="faqLink">Blog</a></h6> -->
-                    <h6><a href="https://forcegurkha.co.in/find-dealer" class="faqLink">Dealer Locator</a></h6>
-					 <h6><a href="#" class="faqLink">Buy Now</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/faqs" class="faqLink">FAQs</a></h6>
-                    <h6><a href="https://forcegurkha.co.in/sitemap" class="faqLink">Sitemap</a></h6>
-                </div>
-
-                <div class="
-								col-xs-12 col-12 col-sm-4 col-md-2
-								mobile-grid
-								
-							">
-                   <h6>Follow us on</h6>
-                    <ul class="socialLinks">
-                        <li>
-                            <a href="https://www.facebook.com/ForceGurkha4x4" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://twitter.com/forcegurkha4x4" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li> -->
-                        <li>
-                            <a href="https://www.instagram.com/forcegurkha/" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/c/ForceGurkha" target="_blank" rel="noopener noreferrer">
-                                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- <ul class="footer-small-links">
-                        <li><a href="https://forcegurkha.co.in/privacy-and-policy/">Privacy Policy</a></li>
-                        <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cokkies">Cookie Policy</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-xs-12 col-md-12 col-lg-12 disclaimer mobile-grid">
-                   <p>
-                        <span>Disclaimers:</span> Force Motors Limited reserves the right to change without notice the colours, equipment, specifications, prices, models and other website content. Accessories shown in the pictures and features mentioned may not be a part of the standard fitments and may change with the variants and models. Actual colour, finesse and upholstery might be different from the images. Pictures are for illustration purpose only. Regular website usage will not ask you for any personal information leaving out components that would request for a test drive, online booking or a dealer call back.
-                    </p>
-                    <ul class="footer-small-links">
-                        <!-- <li><a href="#">Sitemap</a></li> -->
-                        <li><a href="https://forcegurkha.co.in/privacy-and-policy/">Privacy Policy</a></li>
-                        <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cokkies">Cookie Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+	<footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright"><div class="cust-container"><div class="footer-top-wrap"><div class="footer-top"><div class="cmpny-wrap"><h4>Company</h4><ul class="links-list"><li><a href="about.html">About Us</a></li><li><a href="vehicles.html">Vehicles</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="vehicle-experties-wrap"><div class="ftr-vehicles"><h4>Commercial Vehicles</h4><ul class="links-list"><li><a href="urbania-dx.html">Urbania DX</a></li><li><a href="category-traveller.html">Traveller N</a></li><li><a href="category-monobus.html">Monobus</a></li><li><a href="category-trax.html">Trax</a></li><li><a href="category-special-applications.html">Special Applications</a></li></ul></div><div class="ftr-experties"><h4>Special Vehicles</h4><ul class="links-list"><li><a href="gurkha.html">Gurkha</a></li></ul><h4 class="ftrevtoppadd">Electric Vehicle</h4><ul class="links-list"><li><a href="category-ev.html">EV</a></li></ul></div></div><div class="quicklink-newsroom-wrap"><div class="ftr-quicklinks"><h4>Quick Links</h4><ul class="links-list"><li><a href="prices.html">Prices</a></li><li><a href="investors.html">Investors</a></li><li><a href="locate-dealer.html">Locate a Dealer</a></li><li><a href="contact.html">Contact</a></li></ul><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="ftr-newsroom"><h4>Media & Events</h4><ul class="links-list"><li><a href="media-events.html">In The News</a></li><li><a href="media-events.html">Press Release</a></li></ul></div></div></div><div class="tab-extra-div"><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="footer-bottom"><div class="ftr-logo-wrap">
+<a href=""><img src="local_assets/iaw-logo-white.svg" alt="IAW" /></a></div><div class="pts-wrap"><ul class="pts-list"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Sitemap</a></li></ul></div><div class="rights-wrap">
+<span>© 2026 IAW. All Rights Reserved.</span></div></div></div></div></footer>
 <!-- Footer -->
 
 <!--JS Files -->
@@ -3783,6 +4584,7 @@ $(document).ready(function() {
   }
 });
 </script>
+<script data-optimized="1" id="hello-theme-frontend-js" src="local_assets/wp-content_litespeed_js_6a537f8b12d49366c28975d7ced9237d.js?ver=9237d" defer data-deferred="1"></script>
 </body>
 
 </html>
