@@ -1,0 +1,92 @@
+/* Floating Contact Action Button */
+.btn-wrap {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+  display: none;
+}
+body.scroll-down .btn-wrap,
+body.scroll-up .btn-wrap {
+  display: block !important;
+}
+.btn-circle {
+  position: relative !important;
+  z-index: 2 !important;
+  display: block !important;
+  width: 50px !important;
+  height: 50px !important;
+  background: #000 url("wp-content_uploads_2025_02_ctaiconuser.svg") no-repeat center center !important;
+  background-size: 25px 25px !important;
+  border-radius: 50% !important;
+  transition: transform 0.25s, box-shadow 0.25s !important;
+  border: 1px dashed #E2E5EB !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+.btn-circle:hover {
+  transform: scale(1.06) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45) !important;
+}
+.menu-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 100% !important;
+  position: absolute !important;
+  height: 50px !important;
+  width: 50px !important;
+  top: 0 !important;
+  left: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease !important;
+}
+.menu-list li {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 45px !important;
+  height: 45px !important;
+  text-align: center !important;
+  line-height: 45px !important;
+  border-radius: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  transition: top 0.5s cubic-bezier(.2, .05, .35, 1.4), box-shadow 0.5s !important;
+}
+.menu-list li a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 45px !important;
+  height: 45px !important;
+  background: #22222b !important;
+  transition: background 0.35s, transform 0.2s !important;
+  border-radius: 100% !important;
+  text-decoration: none !important;
+}
+.menu-list li a img {
+  height: 18px !important;
+  width: 18px !important;
+  display: block !important;
+}
+.menu-list li:hover {
+  box-shadow: 3px 5px 8px #8e8f90 !important;
+}
+.menu-list li:hover a {
+  background: #0074C3 !important;
+  transform: scale(1.08) !important;
+}
+.btn-wrap.activecta ul.menu-list {
+  height: 200px !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.btn-wrap.activecta .menu-list li:nth-child(1) {
+  top: -82px !important;
+}
+.btn-wrap.activecta .menu-list li:nth-child(2) {
+  top: -30px !important;
+}
