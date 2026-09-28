@@ -376,7 +376,7 @@ src="https://www.facebook.com/tr?id=1009578157364359&ev=PageView&noscript=1"
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed by fix */
     z-index: 99;
     height: 100%;
     transition: all 1s;
@@ -387,19 +387,19 @@ src="https://www.facebook.com/tr?id=1009578157364359&ev=PageView&noscript=1"
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed */
     height: 100%;
     transition: all 1s;
   }
   .firstlevel-menu {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    /* height removed */
+    /* overflow removed */
     overflow-y: scroll;
   }
-  .mobmcontainer.activemobmodel {
+  /* DISABLED by fix: .mobmcontainer.activemobmodel {
     right: 150% !important
-  }
+  } */
   .closemobmenu {
     position: absolute;
     right: 0;
@@ -1051,6 +1051,7 @@ footer#site-footer {
 </style>
 
 <link rel="stylesheet" href="local_assets/floating-cta.css">
+<link rel="stylesheet" href="responsive-fix.css">
 </head>
 
 <body>
@@ -1064,7 +1065,7 @@ footer#site-footer {
 <button type="button" class="site-navigation-toggle" aria-label="Menu">
 <span class="site-navigation-toggle-icon" aria-hidden="true"></span>
 </button></div><nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert><ul id="menu-mein-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="vehicles.html">Vehicles</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="media-events.html">Media & Events</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.html">Contact</a></li></ul></nav></div><div class="mobile-menu"><div class="mobile-menu-inner"><div class="mob-menu-title">
-<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item"><div href="#." class="mobmaintablink mobmenuhaschild" data-tag="mob_companymenu">Company</div><ul class="secondlevel-menu" id="mob_companymenu"><li><a href="about.html">About Us</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
+<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="index.html">Home</a></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><a href="vehicles.html" style="font-weight:600; color:#0074C3; display:block; padding:8px 0; border-bottom:1px dashed #cbd5e1;">All Vehicles Overview &rarr;</a></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
 Traveller N</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_urbania" class="bus-catlink">
 Urbania DX</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_monobus" class="bus-catlink">
 Monobus</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_trax" class="bus-catlink">
@@ -1271,7 +1272,7 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
 <a href="category-ev.html" class="prod-card">
 <img src="local_assets/wp-content_uploads_2025_03_e-Traveller-Smart-Citibus-EV-menu.webp" alt="e-Traveller Smart Citibus EV" />
 <span>e-Traveller Smart Citibus EV</span>
-</a></li></ul></li></ul></div></div></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Merchandise & Scale Models</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="prices.html">Prices</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="investors.html">Investors</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Initiatives</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Newsroom</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">People</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="contact.html">Contact</a></div></div></div></div><style type="text/css">.activemobmodel {
+</a></li></ul></li></ul></div></div></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="about.html">About Us</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="media-events.html">Media &amp; Events</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="contact.html">Contact</a></div></div></div></div><style type="text/css">.activemobmodel {
         display: block;
     }
     .hidediv {
@@ -1430,7 +1431,7 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed by fix */
     z-index: 99;
     height: 100%;
     transition: all 1s;
@@ -1441,19 +1442,19 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed */
     height: 100%;
     transition: all 1s;
   }
   .firstlevel-menu {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    /* height removed */
+    /* overflow removed */
     overflow-y: scroll;
   }
-  .mobmcontainer.activemobmodel {
+  /* DISABLED by fix: .mobmcontainer.activemobmodel {
     right: 150% !important
-  }
+  } */
   .closemobmenu {
     position: absolute;
     right: 0;
@@ -3389,17 +3390,7 @@ document.addEventListener('keydown', function(e) {
     <script type="text/javascript" src="local_assets/wp-content_themes_force-urbania-v2_assets_js_action.js"></script>
 
 
-    <script>
-    $(document).ready(function() {  
-        
 
-        }
-
-    }
-
-});
-
-</script>
 
 <!-- Vertically centered modal -->
 <!--
@@ -3565,11 +3556,11 @@ document.addEventListener('keydown', function(e) {
 
 
 
-<footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright"><div class="cust-container"><div class="footer-top-wrap"><div class="footer-top"><div class="cmpny-wrap"><h4>Company</h4><ul class="links-list"><li><a href="about.html">About Us</a></li><li><a href="vehicles.html">Vehicles</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="vehicle-experties-wrap"><div class="ftr-vehicles"><h4>Commercial Vehicles</h4><ul class="links-list"><li><a href="urbania-dx.html">Urbania DX</a></li><li><a href="category-traveller.html">Traveller N</a></li><li><a href="category-monobus.html">Monobus</a></li><li><a href="category-trax.html">Trax</a></li><li><a href="category-special-applications.html">Special Applications</a></li></ul></div><div class="ftr-experties"><h4>Special Vehicles</h4><ul class="links-list"><li><a href="gurkha.html">Gurkha</a></li></ul><h4 class="ftrevtoppadd">Electric Vehicle</h4><ul class="links-list"><li><a href="category-ev.html">EV</a></li></ul></div></div><div class="quicklink-newsroom-wrap"><div class="ftr-quicklinks"><h4>Quick Links</h4><ul class="links-list"><li><a href="prices.html">Prices</a></li><li><a href="investors.html">Investors</a></li><li><a href="locate-dealer.html">Locate a Dealer</a></li><li><a href="contact.html">Contact</a></li></ul><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="ftr-newsroom"><h4>Media & Events</h4><ul class="links-list"><li><a href="media-events.html">In The News</a></li><li><a href="media-events.html">Press Release</a></li></ul></div></div></div><div class="tab-extra-div"><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="footer-bottom"><div class="ftr-logo-wrap">
+<!-- <footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright"><div class="cust-container"><div class="footer-top-wrap"><div class="footer-top"><div class="cmpny-wrap"><h4>Company</h4><ul class="links-list"><li><a href="about.html">About Us</a></li><li><a href="vehicles.html">Vehicles</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="vehicle-experties-wrap"><div class="ftr-vehicles"><h4>Commercial Vehicles</h4><ul class="links-list"><li><a href="urbania-dx.html">Urbania DX</a></li><li><a href="category-traveller.html">Traveller N</a></li><li><a href="category-monobus.html">Monobus</a></li><li><a href="category-trax.html">Trax</a></li><li><a href="category-special-applications.html">Special Applications</a></li></ul></div><div class="ftr-experties"><h4>Special Vehicles</h4><ul class="links-list"><li><a href="gurkha.html">Gurkha</a></li></ul><h4 class="ftrevtoppadd">Electric Vehicle</h4><ul class="links-list"><li><a href="category-ev.html">EV</a></li></ul></div></div><div class="quicklink-newsroom-wrap"><div class="ftr-quicklinks"><h4>Quick Links</h4><ul class="links-list"><li><a href="prices.html">Prices</a></li><li><a href="investors.html">Investors</a></li><li><a href="locate-dealer.html">Locate a Dealer</a></li><li><a href="contact.html">Contact</a></li></ul><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="ftr-newsroom"><h4>Media & Events</h4><ul class="links-list"><li><a href="media-events.html">In The News</a></li><li><a href="media-events.html">Press Release</a></li></ul></div></div></div><div class="tab-extra-div"><h4 class="socl-head">Follow us</h4><ul class="social-list"><li class="ftr-fb"><a href="#" target="_blank"></a></li><li class="ftr-linkedin"><a href="#" target="_blank"></a></li><li class="ftr-yt"><a href="#" target="_blank"></a></li><li class="ftr-insta"><a href="#" target="_blank"></a></li></ul></div><div class="footer-bottom"><div class="ftr-logo-wrap">
 <a href=""><img src="local_assets/iaw-logo-white.svg" alt="IAW" /></a></div><div class="pts-wrap"><ul class="pts-list"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Sitemap</a></li></ul></div><div class="rights-wrap">
 <span>© 2026 IAW. All Rights Reserved.</span></div></div></div></div></footer>
 
-
+ -->
 
     
 
@@ -3668,6 +3659,7 @@ document.addEventListener('keydown', function(e) {
 <div class="btn-wrap">
 <a href="#" class="btn-circle"></a><ul class="menu-list"><li><a href="contact.html"><img src="local_assets/wp-content_uploads_2025_03_call.svg"></a></li><li><a href="mailto:contact@iaw.com?Subject=IAW - Enquiry From Website"><img src="local_assets/wp-content_uploads_2025_03_email.svg"></a></li></ul></div>
 <script src="local_assets/floating-cta.js" defer></script>
+<script src="mobile-nav.js" defer></script>
 </body>
 
 </html><!-- Bootstrap CSS -->

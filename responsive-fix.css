@@ -1,0 +1,640 @@
+/* ============================================================
+   RESPONSIVE FIX CSS - IAW Force Motors Website
+   Fixes all mobile/tablet responsiveness & menu issues
+   ============================================================ */
+
+/* 1. HIDE UNWANTED LOCATION ICON GLOBALLY */
+.mobdealerlink {
+  display: none !important;
+}
+
+/* 2. BASE RESET & SCROLL FIX */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Only freeze body when mobile menu is explicitly open - DO NOT USE touch-action: none */
+body.unscroll {
+  overflow: hidden !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3. TABLET & MOBILE HEADER FIXES - CLEAN 56px COMPACT BAR */
+@media (max-width: 1024px) {
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .header-inner {
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    width: 100% !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobhambgmenu {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    left: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .mobhambgmenu img {
+    display: block !important;
+    width: 22px !important;
+    height: auto !important;
+    pointer-events: none !important;
+  }
+
+  .site-branding {
+    margin: 0 auto !important;
+  }
+
+  .site-branding .site-logo img.custom-logo {
+    height: 32px !important;
+    max-height: 32px !important;
+    width: auto !important;
+    display: block !important;
+  }
+
+  nav.site-navigation,
+  .right-menu,
+  .site-navigation-toggle-holder,
+  nav.site-navigation-dropdown {
+    display: none !important;
+  }
+
+  /* Inner banner on mobile/tablet: exactly 56px top offset matching header height */
+  .inner-banner {
+    overflow: hidden !important;
+    margin-top: 56px !important;
+    padding-top: 0 !important;
+  }
+
+  .inner-banner-img {
+    height: auto !important;
+    min-height: 180px !important;
+    max-height: 36vh !important;
+    position: relative !important;
+  }
+
+  .inner-banner-img img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .desktop_banner { display: none !important; }
+  .mobile_banner { display: block !important; width: 100% !important; }
+
+  /* Top offset for pages without inner-banner */
+  .home main#content {
+    padding-top: 56px !important;
+  }
+
+  /* Page title & breadcrumbs */
+  .page-copyline {
+    padding-bottom: 20px !important;
+  }
+  .page-copyline h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .page-title h1 {
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+
+  /* Prevent side overflow */
+  .elementor-section-wrap,
+  .e-con-inner,
+  .elementor-container,
+  .elementor-widget-wrap {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .elementor-section, .e-con {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* 4. MOBILE DRAWER MENU & VEHICLE MODELS SCROLL FIX */
+.mobile-menu {
+  position: fixed !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background: #ffffff !important;
+  z-index: 99999 !important;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  padding: 12px 16px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mobile-menu.showmobmenu {
+  left: 0 !important;
+}
+
+.mobile-menu-inner {
+  position: relative !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.mob-menu-title {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 4px 0 12px !important;
+  border-bottom: 1px solid #E2E5EB !important;
+  flex-shrink: 0 !important;
+}
+
+.mob-menu-title img {
+  height: 36px !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.closemobmenu {
+  position: relative !important;
+  width: 32px !important;
+  height: 32px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.closemobmenu:before,
+.closemobmenu:after {
+  content: '' !important;
+  position: absolute !important;
+  top: 15px !important;
+  left: 4px !important;
+  width: 24px !important;
+  height: 2px !important;
+  background: #111111 !important;
+  transition: transform 0.2s !important;
+}
+.closemobmenu:before { transform: rotate(45deg) !important; }
+.closemobmenu:after { transform: rotate(-45deg) !important; }
+
+/* Firstlevel Menu Items (Home, Vehicles, About Us, Media & Events, Contact) */
+.firstlevel-menu {
+  position: relative !important;
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+  padding: 8px 0 60px 0 !important;
+  height: auto !important;
+}
+
+.mob-menu-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: 1px solid #E2E5EB !important;
+}
+
+.mobmaintablink {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #111827 !important;
+  padding: 13px 0 !important;
+  display: block !important;
+  width: 100% !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  position: relative !important;
+  border: none !important;
+}
+
+.mobmaintablink:hover,
+.mobmaintablink.activeurl {
+  color: #0074C3 !important;
+  font-weight: 600 !important;
+}
+
+/* Accordion Plus/Minus icons */
+.mobmenuhaschild {
+  position: relative !important;
+}
+
+.mobmenuhaschild:before {
+  content: '' !important;
+  position: absolute !important;
+  right: 5px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 14px !important;
+  height: 2px !important;
+  background: #374151 !important;
+}
+
+.mobmenuhaschild:after {
+  content: '' !important;
+  position: absolute !important;
+  right: 11px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 2px !important;
+  height: 14px !important;
+  background: #374151 !important;
+  transition: transform 0.2s ease !important;
+}
+
+.mobmenuhaschild.activechildtab:after {
+  transform: translateY(-50%) rotate(90deg) !important;
+  opacity: 0 !important;
+}
+
+.nochildmobmenu .mobmaintablink:before,
+.nochildmobmenu .mobmaintablink:after {
+  display: none !important;
+}
+
+/* Submenu Lists */
+.secondlevel-menu {
+  list-style: none !important;
+  padding: 0 0 8px 12px !important;
+  margin: 0 !important;
+  display: none !important;
+  height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.secondlevel-menu.activechildmenu {
+  display: block !important;
+}
+
+.secondlevel-menu > li {
+  list-style: none !important;
+  border-bottom: 1px solid #F1F5F9 !important;
+}
+
+.secondlevel-menu > li:last-child {
+  border-bottom: none !important;
+}
+
+.secondlevel-menu > li a,
+.secondlevel-menu > li .bus-catlink {
+  font-size: 15px !important;
+  color: #4B5563 !important;
+  padding: 10px 0 !important;
+  display: block !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  position: relative !important;
+}
+
+.secondlevel-menu > li a:hover,
+.secondlevel-menu > li .bus-catlink:hover,
+.secondlevel-menu > li a.activeurl {
+  color: #0074C3 !important;
+}
+
+.mobsecondlevelparent .bus-catlink:after {
+  content: '›' !important;
+  position: absolute !important;
+  right: 5px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 18px !important;
+  color: #9CA3AF !important;
+  background: none !important;
+}
+
+/* 5. VEHICLE MODELS DRAWER (FULL-SCREEN SLIDE-IN WITH FLAWLESS VERTICAL SCROLL) */
+.mob-menu-models {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  height: 100dvh !important;
+  background: #ffffff !important;
+  z-index: 100000 !important;
+  transform: translateX(100%) !important;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+
+.mob-menu-models.activemodels {
+  transform: translateX(0) !important;
+}
+
+/* Individual model list container with guaranteed touch scroll */
+.mobmcontainer {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #ffffff !important;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+  padding: 15px 15px 120px 15px !important;
+  box-sizing: border-box !important;
+  display: none !important;
+}
+
+.mobmcontainer.activemobmodel {
+  display: block !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.mobmcontainer.hidediv {
+  display: none !important;
+}
+
+/* Back button inside model container */
+.mob-model-firstlevel {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mob-model-firstlevel h5 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0074C3 !important;
+  padding: 12px 10px 12px 70px !important;
+  margin: 0 0 15px 0 !important;
+  border-bottom: 2px solid #E2E5EB !important;
+  position: sticky !important;
+  top: -15px !important;
+  background: #ffffff !important;
+  z-index: 50 !important;
+  cursor: pointer !important;
+  display: block !important;
+  text-align: left !important;
+}
+
+.mob-model-firstlevel h5:after {
+  content: '← Back' !important;
+  background: none !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #64748B !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Category header inside models (Passenger Vehicles, School Buses, etc.) */
+.mob-model-firstlevel .catlink-disable span {
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #0F172A !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 10px 0 6px 0 !important;
+  border-bottom: 1px solid #E2E5EB !important;
+  margin-bottom: 12px !important;
+  text-align: left !important;
+}
+
+/* 2-column vehicle cards grid */
+.mob-model-firstlevel ul.menu-secondlevel-post {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+  list-style: none !important;
+}
+
+.mob-model-firstlevel ul.menu-secondlevel-post li {
+  background: #F8FAFC !important;
+  border: 1px solid #E2E5EB !important;
+  border-radius: 8px !important;
+  padding: 10px 8px !important;
+  margin: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.mob-model-firstlevel ul.menu-secondlevel-post li a.prod-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  width: 100% !important;
+}
+
+.mob-model-firstlevel ul.menu-secondlevel-post li a.prod-card img {
+  max-width: 100% !important;
+  max-height: 65px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin-bottom: 6px !important;
+}
+
+.mob-model-firstlevel ul.menu-secondlevel-post li a.prod-card span {
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #1E293B !important;
+  font-weight: 600 !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* 6. VEHICLES.HTML & PAGE RESPONSIVENESS */
+@media (max-width: 767px) {
+  /* Homepage video slider reset */
+  .forcehomeslider .main-slider,
+  .forcehomeslider .swiper-slide {
+    height: 100vh !important;
+  }
+  .main-slider video {
+    top: 0 !important;
+    position: absolute !important;
+  }
+
+  /* Content padding */
+  .products-slider-wrap { padding: 0 !important; }
+  .forcelegacy-section { padding: 30px 15px !important; }
+  .homestats { padding: 30px 15px !important; }
+  .locate-a-dealer-section { padding: 30px 15px !important; }
+
+  /* Product specs list */
+  .pro-specification-list { flex-wrap: wrap !important; }
+  .pro-specification-list li { width: 50% !important; margin-bottom: 12px !important; }
+
+  /* Footer */
+  footer#site-footer {
+    padding: 30px 15px !important;
+    overflow: hidden !important;
+  }
+  .ftr-quicklinks, .ftr-newsroom { width: 50% !important; margin-bottom: 20px !important; }
+  .footer-product-links { flex-wrap: wrap !important; padding: 0 !important; }
+
+  /* Vehicle listing rows */
+  .business-listing-wrap { flex-direction: column !important; }
+  .business-listing-wrap:after { height: 180px !important; }
+  .vehicle-category-text { min-height: auto !important; padding: 20px 15px !important; }
+}
+
+@media (max-width: 480px) {
+  .ftr-quicklinks, .ftr-newsroom { width: 100% !important; }
+  .homestats .elementor-column { width: 50% !important; }
+}
+
+/* ============================================================
+   7. FOOTER SOCIAL ICONS - PREVENT DUPLICATES ON ALL SCREENS
+   ============================================================ */
+
+/* Desktop (> 1024px): Social icons inside .ftr-quicklinks, hide .tab-extra-div */
+@media (min-width: 1025px) {
+  #site-footer .tab-extra-div,
+  .tab-extra-div {
+    display: none !important;
+  }
+
+  #site-footer .ftr-quicklinks h4.socl-head,
+  .ftr-quicklinks h4.socl-head {
+    display: block !important;
+  }
+
+  #site-footer .ftr-quicklinks ul.social-list,
+  .ftr-quicklinks ul.social-list {
+    display: flex !important;
+  }
+}
+
+/* Mobile & Tablet (<= 1024px): Hide duplicate icons under Quick Links, show single Follow us section */
+@media (max-width: 1024px) {
+  #site-footer .ftr-quicklinks h4.socl-head,
+  #site-footer .ftr-quicklinks ul.social-list,
+  .ftr-quicklinks h4.socl-head,
+  .ftr-quicklinks ul.social-list {
+    display: none !important;
+  }
+
+  #site-footer .tab-extra-div,
+  .tab-extra-div {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  #site-footer .tab-extra-div h4.socl-head,
+  .tab-extra-div h4.socl-head {
+    display: block !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    margin: 15px 0 12px 0 !important;
+    font-weight: 400 !important;
+  }
+
+  #site-footer .tab-extra-div ul.social-list,
+  .tab-extra-div ul.social-list {
+    display: flex !important;
+    padding: 0 !important;
+    margin: 0 0 15px 0 !important;
+    list-style-type: none !important;
+    width: 120px !important;
+    justify-content: space-between !important;
+  }
+}
+
+/* ============================================================
+   8. FIND YOUR FORCE SLIDER - URBANIA DX SINGLE LINE FIX
+   ============================================================ */
+.products-slider-wrap span.swiper-pagination-bullet {
+  white-space: nowrap !important;
+}
+
+.products-slider-wrap span.swiper-pagination-bullet:after {
+  white-space: nowrap !important;
+}
+
+.products-slider-wrap span.swiper-pagination-bullet:nth-child(1) {
+  width: 105px !important;
+}
+
+.products-slider-wrap span.swiper-pagination-bullet:nth-child(1):after {
+  width: 105px !important;
+  white-space: nowrap !important;
+}
+
+.products-slider-wrap span.swiper-pagination-bullet:nth-child(2) {
+  width: 120px !important;
+}
+
+.products-slider-wrap span.swiper-pagination-bullet:nth-child(2):after {
+  width: 120px !important;
+  white-space: nowrap !important;
+}
+
+

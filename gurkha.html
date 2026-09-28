@@ -701,6 +701,7 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
 
 </style>
 <link rel="stylesheet" href="local_assets/floating-cta.css">
+<link rel="stylesheet" href="responsive-fix.css">
 </head>
 
 <body class="5">
@@ -765,7 +766,7 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
 <button type="button" class="site-navigation-toggle" aria-label="Menu">
 <span class="site-navigation-toggle-icon" aria-hidden="true"></span>
 </button></div><nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert><ul id="menu-mein-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="vehicles.html">Vehicles</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="media-events.html">Media & Events</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.html">Contact</a></li></ul></nav></div><div class="mobile-menu"><div class="mobile-menu-inner"><div class="mob-menu-title">
-<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item"><div href="#." class="mobmaintablink mobmenuhaschild" data-tag="mob_companymenu">Company</div><ul class="secondlevel-menu" id="mob_companymenu"><li><a href="about.html">About Us</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
+<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="index.html">Home</a></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><a href="vehicles.html" style="font-weight:600; color:#0074C3; display:block; padding:8px 0; border-bottom:1px dashed #cbd5e1;">All Vehicles Overview &rarr;</a></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
 Traveller N</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_urbania" class="bus-catlink">
 Urbania DX</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_monobus" class="bus-catlink">
 Monobus</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_trax" class="bus-catlink">
@@ -972,7 +973,7 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
 <a href="category-ev.html" class="prod-card">
 <img src="local_assets/wp-content_uploads_2025_03_e-Traveller-Smart-Citibus-EV-menu.webp" alt="e-Traveller Smart Citibus EV" />
 <span>e-Traveller Smart Citibus EV</span>
-</a></li></ul></li></ul></div></div></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Merchandise & Scale Models</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="prices.html">Prices</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="investors.html">Investors</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Initiatives</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">Newsroom</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="#">People</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="contact.html">Contact</a></div></div></div></div><style type="text/css">.activemobmodel {
+</a></li></ul></li></ul></div></div></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="about.html">About Us</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="media-events.html">Media &amp; Events</a></div><div class="mob-menu-item nochildmobmenu"><a class="mobmaintablink" href="contact.html">Contact</a></div></div></div></div><style type="text/css">.activemobmodel {
         display: block;
     }
     .hidediv {
@@ -1131,7 +1132,7 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed by fix */
     z-index: 99;
     height: 100%;
     transition: all 1s;
@@ -1142,19 +1143,19 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed */
     height: 100%;
     transition: all 1s;
   }
   .firstlevel-menu {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    /* height removed */
+    /* overflow removed */
     overflow-y: scroll;
   }
-  .mobmcontainer.activemobmodel {
+  /* DISABLED by fix: .mobmcontainer.activemobmodel {
     right: 150% !important
-  }
+  } */
   .closemobmenu {
     position: absolute;
     right: 0;
@@ -4681,6 +4682,7 @@ $(document).ready(function() {
 });
 </script>
 <script data-optimized="1" id="hello-theme-frontend-js" src="local_assets/wp-content_litespeed_js_6a537f8b12d49366c28975d7ced9237d.js?ver=9237d" defer data-deferred="1"></script>
+<script src="mobile-nav.js" defer></script>
 </body>
 
 </html>
@@ -4763,7 +4765,6 @@ $(document).ready(function() {
           ]);
        });*/
    });
-   return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
 <style id='wp-emoji-styles-inline-css'>
 
@@ -5493,7 +5494,7 @@ src="https://www.facebook.com/tr?id=968641417997050&ev=PageView&noscript=1"
 <button type="button" class="site-navigation-toggle" aria-label="Menu">
 <span class="site-navigation-toggle-icon" aria-hidden="true"></span>
 </button></div><nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert><ul id="menu-mein-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="vehicles.html">Vehicles</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="media-events.html">Media & Events</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.html">Contact</a></li></ul></nav></div><div class="mobile-menu"><div class="mobile-menu-inner"><div class="mob-menu-title">
-<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item"><div href="#." class="mobmaintablink mobmenuhaschild" data-tag="mob_companymenu">Company</div><ul class="secondlevel-menu" id="mob_companymenu"><li><a href="about.html">About Us</a></li><li><a href="about.html">Our Expertise</a></li><li><a href="about.html">Leadership Team</a></li><li><a href="about.html">Legacy</a></li></ul></div><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
+<img src="local_assets/iaw-logo.svg" alt="IAW"><div class="closemobmenu"></div></div><div class="firstlevel-menu"><div class="mob-menu-item"><div class="mobmaintablink mobmenuhaschild" data-tag="mob_businessmenu">Vehicles</div><ul class="secondlevel-menu" id="mob_businessmenu"><li class="mobsecondlevelparent"><div data-tag="mobcatname_traveller" class="bus-catlink">
 Traveller N</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_urbania" class="bus-catlink">
 Urbania DX</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_monobus" class="bus-catlink">
 Monobus</div></li><li class="mobsecondlevelparent"><div data-tag="mobcatname_trax" class="bus-catlink">
@@ -5859,7 +5860,7 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed by fix */
     z-index: 99;
     height: 100%;
     transition: all 1s;
@@ -5870,19 +5871,19 @@ EV</div></li></ul><div class="mob-menu-models"><div class="mobmcontainer hidediv
     background: #ffffff;
     width: 100%;
     left: auto;
-    right: -150%;
+    /* right removed */
     height: 100%;
     transition: all 1s;
   }
   .firstlevel-menu {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    /* height removed */
+    /* overflow removed */
     overflow-y: scroll;
   }
-  .mobmcontainer.activemobmodel {
+  /* DISABLED by fix: .mobmcontainer.activemobmodel {
     right: 150% !important
-  }
+  } */
   .closemobmenu {
     position: absolute;
     right: 0;
