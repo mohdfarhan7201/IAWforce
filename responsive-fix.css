@@ -841,5 +841,95 @@ img {
   }
 }
 
+/* ============================================================
+   10. MOBILE VIDEO, SLIDER & ANIMATION RESPONSIVE ENHANCEMENTS
+   ============================================================ */
 
+/* Hero slider loading rescue */
+.main-slider.loading {
+  opacity: 1 !important;
+}
 
+/* Fallback: ensure animated elements are visible even before JS triggers */
+.elementor-invisible {
+  visibility: visible !important;
+}
+
+/* Hero Slider & Video on Mobile */
+@media (max-width: 767px) {
+  .forcehomeslider .main-slider,
+  .forcehomeslider .swiper-slide {
+    height: 75vh !important;
+    min-height: 480px !important;
+    max-height: 85vh !important;
+  }
+
+  .main-slider video,
+  #bnr-vid {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .forcehomeslider .swiper-slide .content .title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}
+
+/* Product Model Category Tabs Touch Scroll on Mobile & Tablet */
+@media (max-width: 1024px) {
+  .products-slider-wrap .swiper-pagination {
+    display: flex !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    max-width: 100% !important;
+    padding: 10px 15px !important;
+    gap: 8px !important;
+    white-space: nowrap !important;
+  }
+
+  .products-slider-wrap .swiper-pagination::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .products-slider-wrap span.swiper-pagination-bullet {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Statistics Counters on Mobile */
+@media (max-width: 767px) {
+  .homestats {
+    padding: 30px 15px !important;
+  }
+
+  .homestats .elementor-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .homestats .elementor-column {
+    width: 50% !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  .elementor-counter-number-wrapper {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+
+  .elementor-counter-title {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+}
